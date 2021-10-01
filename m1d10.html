@@ -62,7 +62,7 @@
                   align-content: center;
                 }
                 
-                td, th,tr {
+        td, th {
                    
               border-color:rgb(61, 190, 61);
               align-content: center;
@@ -71,10 +71,20 @@
               padding: 80px;
               height: 50px!important;
               width: 50px !important;
-              border-collapse: collapse;
+              border-radius: 10px;
               font-family: 'Source Sans Pro', sans-serif;
             
           }
+          .classcontainer{
+              font-weight: bold;
+              font-size: larger;
+              
+
+          }
+          .classcontainer1{
+              display:none;
+          }
+           
           footer{
               font-family: 'Source Sans Pro', sans-serif;
           }
@@ -88,12 +98,12 @@
               margin: 15px;
           }
         td{
-              background-color: rgb(87, 148, 27);
+              border-color: rgb(87, 148, 27);
           } 
-          tr{
+        tr{
               border: dotted red;
           }
-          .center {
+        .center {
           margin-left: auto;
         margin-right: auto;
          }
@@ -103,10 +113,10 @@
     <body>
           <h1 id="h1id">My heading</h1>
            <ol>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi placeat eum fugit asperiores sint iure praesentium aut? Laudantium officia sit dolorum ullam magnam voluptatem, explicabo perspiciatis, dolore accusamus ex quas!</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, assumenda. Necessitatibus magni fugit nihil esse, numquam molestias, facere praesentium fuga dolores expedita rem porro, autem alias doloremque placeat ducimus. Est.</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, assumenda. Necessitatibus magni fugit nihil esse, numquam molestias, facere praesentium fuga dolores expedita rem porro, autem alias doloremque placeat ducimus. Est.</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, assumenda. Necessitatibus magni fugit nihil esse, numquam molestias, facere praesentium fuga dolores expedita rem porro, autem alias doloremque placeat ducimus. Est.</li>
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3 </li>
+    <li>list 4</li>
     </ol>
     <br>
     <br>
@@ -155,7 +165,7 @@
     
 <br><br>
     <hr>
-    <div class="container">
+    <div class="paragraph-container">
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore porro doloribus autem minima tempora libero! Ut eius sint corporis inventore maxime laboriosam, dicta repellendus consequatur. Asperiores soluta nisi eligendi rerum.</p>
       <ul id ="ulid">
         <li></li>
@@ -183,11 +193,13 @@
     28) Create an array of arrays, in which every array has 10 random numbers
     29) Create a function that gets 2 arrays as parameters and returns the longest one
     30) Create a function that gets 2 arrays of numbers as parameters and returns the one with the higher sum of values -->
-    <script >
+
+         <script >
         let x = "john";
         let y = "doe";
         
         console.log(x, "<>", y);
+
         
         let myself = {
           name: "hilina",
@@ -195,11 +207,15 @@
           email: "hilinawuhib@gmail.com",
         };
         console.log(myself);
+
+
         
         delete myself.email
         console.log(myself);
+
          
-        let array=[1,2,3,4,5,6,7,8,9,10]
+        
+        let array=["","","","","","","","","",""]
         console.log(array)
         
         let arr= [];
@@ -243,6 +259,7 @@
             
         }
         //changeTheHeading()
+
          function addExtraRow(){
              document.querySelectorAll("tr").add
          }
@@ -259,7 +276,7 @@
              
              
          }
-         addRedBackGround()
+        // addRedBackGround()
          
          window.onload
          console.log("page loaded")
