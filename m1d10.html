@@ -47,6 +47,11 @@
               width: 768px;
               height: 768px;
             }
+            .border{
+                color: blueviolet;
+                font-style: italic;
+                font-weight: bold;
+            }
 
               img{
              
@@ -82,9 +87,9 @@
           p{
               margin: 15px;
           }
-          td{
+          /* td{
               background-color: rgb(87, 148, 27);
-          }
+          } */
           tr{
               border: dotted red;
           }
@@ -92,6 +97,9 @@
           margin-left: auto;
         margin-right: auto;
          }
+        
+
+        
         
 
 
@@ -114,16 +122,16 @@
     <div class="tablecontainer">
     <table "border="1" cellspacing="0" cellpadding="0"class="center">
     
-        <tr>
+        <tr  class="trclass">
           <th></th>
           <th></th>
           <th></th>
           <th></th>
           <th></th>
            </tr>
-        <tr>
+        <tr  class="trclass">
           <td ><img src="https://media.istockphoto.com/photos/colored-powder-explosion-on-black-background-picture-id1057506940?k=20&m=1057506940&s=612x612&w=0&h=3j5EA6YFVg3q-laNqTGtLxfCKVR3_o6gcVZZseNaWGk=" alt="">
-          <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fmixing-colors&psig=AOvVaw0MVcNai8jXV7ACGPPvNyEl&ust=1633165881599000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCKj7zpbvqPMCFQAAAAAdAAAAABAV">link</a>
+          <a class="aclass" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fmixing-colors&psig=AOvVaw0MVcNai8jXV7ACGPPvNyEl&ust=1633165881599000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCKj7zpbvqPMCFQAAAAAdAAAAABAV">link</a>
       </td>
 
           <td></td>
@@ -132,7 +140,7 @@
           <td></td>
           
         </tr>
-        <tr>
+        <tr  class="trclass">
     
           <td></td>
           <td></td>
@@ -141,9 +149,9 @@
           <td></td>
           
       </tr>
-      <tr>
+      <tr class="trclass">
            <td ><img src="https://media.istockphoto.com/photos/colored-powder-explosion-on-black-background-picture-id1057506940?k=20&m=1057506940&s=612x612&w=0&h=3j5EA6YFVg3q-laNqTGtLxfCKVR3_o6gcVZZseNaWGk=" alt="">
-              <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fmixing-colors&psig=AOvVaw0MVcNai8jXV7ACGPPvNyEl&ust=1633165881599000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCKj7zpbvqPMCFQAAAAAdAAAAABAV">link</a>
+              <a class="aclass" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fmixing-colors&psig=AOvVaw0MVcNai8jXV7ACGPPvNyEl&ust=1633165881599000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCKj7zpbvqPMCFQAAAAAdAAAAABAV">link</a>
           </td>
           <td></td>
           <td></td>
@@ -217,7 +225,7 @@
                   current.push(Math.floor(Math.random() * 10));
              arrayRandom.push(current);
         }
-        console.log(arr)
+        console.log(arrayRandom)
 
         // <!-- DOM EXERCISES
             
@@ -245,19 +253,23 @@
         }
         //changeTheHeading()
          function addExtraRow(){
-             document.querySelectorAll("tr")
+             document.querySelectorAll("tr").add
          }
 
 
          function addClassOfTest(){
-             document.get
+             document.getElementsByClassName("trclass").classList.add(test)
 
          }
+        // addClassOfTest()
+
          function addRedBackGround() {
-             document.querySelectorAll(a).style.backgroundcolor="red"
+             document.getElementsByClassName("aclass").style.backgroundColor="red"
+             
              
          }
-         //addRedBackGround()
+         addRedBackGround()
+         
          window.onload
          console.log("page loaded")
 
